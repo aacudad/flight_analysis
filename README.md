@@ -66,18 +66,9 @@ Both notebooks use the open‑weights **Gemma 3‑4B Instruct** model (`gemma3:
 
 ---
 
-## 4. Troubleshooting
 
-| Symptom | Possible fix |
-|---------|--------------|
-| `ModuleNotFoundError: No module named 'ollama'` | Verify that you installed the package with `pip install ollama`. |
-| `ollama: command not found` | Ensure the Ollama runtime is installed and its binary folder is on your PATH. |
-| Model download extremely slow or fails | Check your internet connection or set the `OLLAMA_HOST` environment variable if you’re pointing to a remote Ollama server. |
-| GPU out‑of‑memory errors | Run with CPU (`OLLAMA_NO_GPU=1`) or use a smaller quantisation (e.g. `:q4_K_M`). |
 
----
-
-## 5. Extending the notebooks
+## 4. Extending the notebooks
 
 - **Change the model**: simply replace `"gemma3:4b-it-qat"` with any other model you have pulled (`ollama pull llama3:8b...`).
 - **Adapt the prompt**: edit the `prompt` string to reflect a different classification rubric.
@@ -85,7 +76,7 @@ Both notebooks use the open‑weights **Gemma 3‑4B Instruct** model (`gemma3:
 
 ---
 
-## 6. License
+## 5. License
 
 The code in this repository is released under the MIT License.  
 The Gemma model weights are subject to [Google’s Gemma Community License](https://ai.google.dev/gemma) and the Ollama [terms of service](https://ollama.ai/tos).
